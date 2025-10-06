@@ -1,13 +1,87 @@
 /*Must have animation, responsiveness*/
 :root {
-
+    --title-font : "Inter", sans-serif;
+    --small-text : "Montserrat", sans-serif;
+    --primary-color : #f3e9dc;
+    --secondary-color : #3bc14a;
+    --background-color: #040f16;
+    --text-color: #aaaeb7;
+    --extra-color: #234e36;
+    --white : #f7fbfb;
 }
 
+/* General page elements */
+
 * {
-    /*font-family: var(--font);*/
+    font-family: var(--small-text);
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  background-color: var(--white);
 }
 
 /* Keyframes */
 
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    min-height: 30px;
+    background-color: var(--primary-color);
+}
+
+header h1 {
+    font-family: var(--title-font);
+    color: var(--background-color);
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    margin-left: 3j0px;
+}
+
 /* Main Section */
+
+.hourly-prevision {
+    display: flex;
+    flex-direction: row;
+}
+
+.hourly-prevision img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    min-height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer button {
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    border: thin 1px;
+    border-color: var(--text-color);
+    margin: 5px;
+}
+
+footer button img{
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+}

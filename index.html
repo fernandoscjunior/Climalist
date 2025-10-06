@@ -7,31 +7,93 @@
     <meta name="author" content="Fernando S. Costa Jr">
     <meta property="og:title" content="Climalist">
     <meta property="og:description" content="See the weather info with no distractions">
-    <meta property="og:url" content="#">
-    <meta property="og:image" content="#" />
+    <meta property="og:url" content="https://fernandoscjunior.github.io/Climalist">
+    <meta property="og:image" content="https://github.com/fernandoscjunior/Climalist/blob/main/images/logo.png" />
     <title>Climalist</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <!--Add CSS, JS and Google Fonts-->
 </head>
 <body>
+    <header>
+        <div>
+            <img class="logo" src="images/logo-light.svg" alt="Climalist logo">
+        </div>
+        <div>
+            <h1>Climalist</h1>
+        </div>
+    </header>
+
     <main>
         <section class="main-info">
-            
+            <img src="" alt="placeholder">
+            <p>Current weather condition</p>
+            <div>
+                <p>Aditional today's weather info</p>
+            </div>
         </section>
-        <section class="hourly-prevision">
 
+        <h2>Weather in the next hours</h2>
+
+        <section class="hourly-prevision">
+            <div>
+                <p>Time</p>
+                <img src="images/light-mode-sun.svg" alt="placeholder icon">
+            </div>
+            <div>
+                <p>Time</p>
+                <img src="images/light-mode-sun.svg" alt="placeholder icon">
+            </div>
+            <div>
+                <p>Time</p>
+                <img src="images/light-mode-sun.svg" alt="placeholder icon">
+            </div>
+            <div>
+                <p>Time</p>
+                <img src="images/light-mode-sun.svg" alt="placeholder icon">
+            </div>
+            <div>
+                <p>Time</p>
+                <img src="images/light-mode-sun.svg" alt="placeholder icon">
+            </div>
+            <div>
+                <p>Time</p>
+                <img src="images/light-mode-sun.svg" alt="placeholder icon">
+            </div>
+            <div>
+                <p>Time</p>
+                <img src="images/light-mode-sun.svg" alt="placeholder icon">
+            </div>
         </section>
+
         <section class="next-days">
 
         </section>
+
         <section class="more-info">
 
         </section>
     </main>
+
+    <footer>
+        <div>
+            <button class="theme-switch">
+                <img src="images/light-mode-sun.svg" alt="Theme switch button">
+            </button>
+        </div>
+
+        <div>
+            <button class="celsius-switch">
+                <img src="images/celsius-light-mode.svg" alt="Celsius to Fahrenheit switch button">
+            </button>
+        </div>
+    </footer>
 </body>
 </html>
