@@ -34,33 +34,57 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     min-height: 30px;
-    background-color: var(--primary-color);
+    border-bottom: var(--text-color) 1px solid;
+    text-align: center;
 }
 
 header h1 {
     font-family: var(--title-font);
     color: var(--background-color);
+    padding: 5px;
 }
 
 .logo {
     width: 45px;
     height: 45px;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
 /* Main Section */
 
-.hourly-prevision {
-    display: flex;
-    flex-direction: row;
+.current-info {
+    padding: 10px;
+    border-bottom: var(--text-color) solid 1px;
 }
 
-.hourly-prevision img {
-    width: 30px;
-    height: 30px;
+.hourly-prevision {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-bottom: var(--text-color) 1px solid;
+    align-content: center;
+    padding: 10px;
+    text-align: center;
+    & h2 {
+        grid-column: 1/7;
+    }
+    & img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.next-days {
+    display: flex;
+    flex-direction: column;
+}
+
+.next-days img {
+    width: 25px;
+    height: 25px;
 }
 
 /* Footer */
@@ -70,10 +94,11 @@ footer {
     min-height: 50px;
     flex-direction: row;
     justify-content: space-between;
+    position: sticky;
+    bottom: 0;
 }
 
 footer button {
-    background-color: var(--primary-color);
     border-radius: 100%;
     border: thin 1px;
     border-color: var(--text-color);
