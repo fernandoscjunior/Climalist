@@ -1,0 +1,41 @@
+@media only screen and (min-width: 641px) {
+    .current-info {
+    padding: 10px;
+    border-bottom: var(--border-color) solid 1px;
+    text-align: center;
+        & h2 {
+            font-size:xx-large;
+        }
+    }
+
+    .hourly-prevision {
+    padding: 10px;
+    text-align: center;
+    border-bottom: var(--border-color) 1px solid;
+    & ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        list-style: none;
+        & li {
+            padding: 5px;
+            margin: 0px;
+        }
+    }
+
+    .next-days {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    & ul {
+        list-style: none;
+        padding: 15px;
+        & li {
+            border: var(--border-color) 1px solid;
+            padding: 5px;
+        }
+    }
+}
+
+}
+}

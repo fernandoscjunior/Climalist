@@ -13,10 +13,10 @@ themeButton.addEventListener('click', () => {
     if (logo.src.includes("images/logo-light.svg")) {
         logo.src = "images/logo-dark.svg";
         modeButton.src = "images/dark-mode-sun.svg";
-        celsiusButton.src = "images/celsius-dark-mode.svg"
+
       } else {
         logo.src = "images/logo-light.svg";
         modeButton.src = "images/light-mode-sun.svg";
-        celsiusButton.src = "images/celsius-light-mode.svg";
+
       }
 });

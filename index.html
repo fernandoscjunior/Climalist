@@ -19,9 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <!--Add CSS and JS-->
-    <script defer src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script defer src="scripts/dark-mode.js"></script>
+    <script type="module" src="scripts/weather.mjs"></script>
 </head>
 <body>
     <header>
@@ -32,109 +33,26 @@
             <h1>Climalist</h1>
         </div>
     </header>
-
     <main>
         <section class="main-info">
-            <div class="current-info" draggable="true">
-                <img src="" alt="placeholder">
+            <div class="current-info" draggable="true" id="current-weather">
+                <h2 id="temperature"></h2>
                 <p>Current weather condition</p>
-                <div>
-                    <p>Aditional today's weather info</p>
-                </div>
             </div>
-
-            <div class="hourly-prevision" draggable="true">
-
+            <div class="hourly-prevision" draggable="true" id="hourly-forecast">
                  <h2>Weather in the next hours</h2>
-
                 <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
+                    <ul id="hourly-list"></ul>
                 </div>
             </div>
-
-            <div class="next-days" draggable="true">
+            <div class="next-days" draggable="true" id="daily-forecast">
                 <div>
-                    <p>Day</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Day</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Day</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Day</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Day</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Day</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Day</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
+                    <h2>Weather in the next days</h2>
+                    <ul id="daily-list"></ul>
                 </div>
             </div>
-
-        </section>
-
-        <section class="more-info">
-
         </section>
     </main>
-
     <footer>
         <div>
             <button id="theme-switch" class="theme-switch">
@@ -142,8 +60,8 @@
             </button>
         </div>
         <div>
-            <button class="celsius-switch">
-                <img class="celsius" src="images/celsius-light-mode.svg" alt="Celsius to Fahrenheit switch button">
+            <button id="celsius-switch" class="celsius-switch">
+                <img class="celsius" src="images/fahrenheit-light-mode.svg" alt="Celsius to Fahrenheit switch button">
             </button>
         </div>
     </footer>

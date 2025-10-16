@@ -1,0 +1,19 @@
+@media only screen and (min-width: 51rem) {
+    body {
+        display: grid;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        min-height: 30px;
+        text-align: center;
+        & h1 {
+            font-family: var(--title-font);
+            color: var(--bg-color);
+            padding: 5px;
+        }
+    }
+}
