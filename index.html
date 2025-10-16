@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <!--Add CSS and JS-->
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/dark-mode.js"></script>
 </head>
 <body>
     <header>
@@ -33,7 +35,7 @@
 
     <main>
         <section class="main-info">
-            <div class="current-info">
+            <div class="current-info" draggable="true">
                 <img src="" alt="placeholder">
                 <p>Current weather condition</p>
                 <div>
@@ -41,7 +43,7 @@
                 </div>
             </div>
 
-            <div class="hourly-prevision">
+            <div class="hourly-prevision" draggable="true">
 
                  <h2>Weather in the next hours</h2>
 
@@ -95,40 +97,33 @@
                 </div>
             </div>
 
-            <div class="next-days">
+            <div class="next-days" draggable="true">
                 <div>
-                    <p>Time</p>
+                    <p>Day</p>
                     <img src="images/light-mode-sun.svg" alt="placeholder icon">
                 </div>
                 <div>
-                    <p>Time</p>
+                    <p>Day</p>
                     <img src="images/light-mode-sun.svg" alt="placeholder icon">
                 </div>
                 <div>
-                    <p>Time</p>
+                    <p>Day</p>
                     <img src="images/light-mode-sun.svg" alt="placeholder icon">
                 </div>
                 <div>
-                    <p>Time</p>
+                    <p>Day</p>
                     <img src="images/light-mode-sun.svg" alt="placeholder icon">
                 </div>
                 <div>
-                    <p>Time</p>
+                    <p>Day</p>
                     <img src="images/light-mode-sun.svg" alt="placeholder icon">
                 </div>
                 <div>
-                    <p>Time</p>
+                    <p>Day</p>
                     <img src="images/light-mode-sun.svg" alt="placeholder icon">
                 </div>
                 <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div>
-                <div>
-                    <p>Time</p>
-                    <img src="images/light-mode-sun.svg" alt="placeholder icon">
-                </div><div>
-                    <p>Time</p>
+                    <p>Day</p>
                     <img src="images/light-mode-sun.svg" alt="placeholder icon">
                 </div>
             </div>
@@ -142,13 +137,13 @@
 
     <footer>
         <div>
-            <button class="theme-switch">
-                <img src="images/light-mode-sun.svg" alt="Theme switch button">
+            <button id="theme-switch" class="theme-switch">
+                <img class="mode" src="images/light-mode-sun.svg" alt="Theme switch button">
             </button>
         </div>
         <div>
             <button class="celsius-switch">
-                <img src="images/celsius-light-mode.svg" alt="Celsius to Fahrenheit switch button">
+                <img class="celsius" src="images/celsius-light-mode.svg" alt="Celsius to Fahrenheit switch button">
             </button>
         </div>
     </footer>
