@@ -13,7 +13,7 @@
     --title-font : "Inter", sans-serif;
     --small-text : "Montserrat", sans-serif;
     --primary-color : #f3e9dc;
-    --secondary-color : #d3d83f;
+    --secondary-color : #76c4f2;
     --bg-color: #040f16;
     --border-color: #aaaeb7;
     --text-color: #234e36;
@@ -21,7 +21,7 @@
 }
 .dark-mode {
     --primary-color : #aaaeb7;
-    --secondary-color : #234e36;
+    --secondary-color : #182158;
     --bg-color : #fffbf5;
     --border-color : #dbd0c4;
     --text-color : #d3d83f;
