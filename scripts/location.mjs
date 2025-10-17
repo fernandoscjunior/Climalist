@@ -1,4 +1,4 @@
-const API_KEY = 'ec76675873464c6b8bc21fc0bedf5027';
+const API_KEY = 'f4124ecbc57b42fbab3016ba4364daf8';
 
 export async function getUserLocation() {
   try {
